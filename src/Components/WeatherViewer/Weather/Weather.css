@@ -1,0 +1,17 @@
+.upper {
+    display: flex;
+    justify-content: center;
+}
+
+div span {
+    display: block;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+}
+
+.lower i {
+    padding: 0 10px;
+}
