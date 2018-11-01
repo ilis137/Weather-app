@@ -3,15 +3,51 @@
     justify-content: center;
 }
 
+.upper i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
 div span {
     display: block;
+    font-weight: 600;
+    padding: 3px;
+    font-size: 20px;
 }
 
 .lower {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .lower i {
     padding: 0 10px;
+    font-size: 40px;
+}
+
+.weather {
+    border: 3px solid black;
+    padding: 27px 0;
+}
+
+i.wi-day-sunny {
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.climate {
+    font-size: 15px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.temprature {
+    font-size: 50px;
+}
+
+.metrics {
+    padding-top: 25px;
+    font-size: 28px;
+    padding-left: 10px;
 }

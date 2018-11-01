@@ -4,11 +4,11 @@ import "./WeatherViewer.css";
 const WeatherViewer = props => {
   return (
     <div className="WeatherViewer">
-      <div>
+      <div className="location">
         {props.location}
         Mumbai
       </div>
-      <Weather />
+      <Weather temp={props.temp} />
     </div>
   );
 };
