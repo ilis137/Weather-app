@@ -27,13 +27,12 @@ div span {
 }
 
 .weather {
-    border: 3px solid black;
-    padding: 27px 0;
+    padding: 35px 0;
 }
 
-i.wi-day-sunny {
-    padding-top: 15px;
-    font-size: 35px;
+.icon {
+    padding-bottom: 15px;
+    font-size: 15px;
 }
 
 .climate {
@@ -47,7 +46,29 @@ i.wi-day-sunny {
 }
 
 .metrics {
-    padding-top: 25px;
-    font-size: 28px;
-    padding-left: 10px;
+    padding: 0;
+    margin-top: 23px;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border-radius: 50%;
+    border: none;
+}
+
+button {
+    outline: none;
+    color: #ffffff
+}
+
+.metrics:hover {
+    border: solid 1px white;
+    border-radius: 50%;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
 }

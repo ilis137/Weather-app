@@ -7,19 +7,27 @@ import "./Weather.css";
 const Weather = props => (
   <div className="weather">
     <div className="upper">
-      <i className="wi wi-day-sunny" />
+      <i className="wi wi-day-haze" />
+      <img src={props.icon} alt="weather icon" className="icon" />
       <div>
         <span className="temprature">
           {props.temp}
           &#176;
         </span>
-        <span className="climate"> Sunny </span>
+        <span className="climate"> {props.Weather} </span>
       </div>
-      <span className="metrics"> C </span>
+      <button className="metrics" onClick={props.changeMetrics}>
+        {props.metric}
+      </button>
     </div>
     <div className="lower">
-      <i className="wi wi-raindrop" />
-      <i className="wi wi-strong-wind" />
+      <div className="wind">
+        <i className="wi wi-strong-wind" />
+        <span>
+          {props.windspeed}
+          mi/hr
+        </span>
+      </div>
     </div>
   </div>
 );
