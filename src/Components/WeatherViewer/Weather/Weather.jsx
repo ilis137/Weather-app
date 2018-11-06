@@ -7,8 +7,14 @@ import "./Weather.css";
 const Weather = props => (
   <div className="weather">
     <div className="upper">
-      <i className="wi wi-day-haze" />
-      <img src={props.icon} alt="weather icon" className="icon" />
+      {props.weather === "haze" ? (
+        <i className="wi wi-day-haze" />
+      ) : props.weather === "smoke" ? (
+        <i className="wi wi-smoke" />
+      ) : (
+        <i className="wi wi-day-fog" />
+      )}
+
       <div>
         <span className="temprature">
           {props.temp}
